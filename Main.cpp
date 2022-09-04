@@ -67,7 +67,7 @@ DWORD WINAPI input(PVOID lvpParameter)
 	HANDLE hPipe;
 	char buffer[999999];
 	DWORD dwRead;
-	hPipe = CreateNamedPipe(TEXT("\\\\.\\pipe\\Axon"), // This is the pipe name.
+	hPipe = CreateNamedPipe(TEXT("\\\\.\\pipe\\Mist"), // This is the pipe name.
 		PIPE_ACCESS_DUPLEX | PIPE_TYPE_BYTE | PIPE_READMODE_BYTE,
 		PIPE_WAIT,
 		1,
